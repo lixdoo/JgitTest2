@@ -1,0 +1,304 @@
+html {
+    font-family: sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+*::-moz-placeholder {
+    color: #999;
+}
+
+body {
+    min-width: 1020px;
+    word-wrap: break-word;
+}
+body {
+    background-color: #fff;
+    color: #333;
+    font: 13px/1.4 Helvetica,arial,nimbussansl,liberationsans,freesans,clean,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+body {
+    margin: 0;
+}
+
+.commits-listing::before {
+    background-color: #f3f3f3;
+    bottom: 0;
+    content: "";
+    display: block;
+    left: 14px;
+    position: absolute;
+    top: 0;
+    width: 2px;
+    z-index: -1;
+}
+.commits-listing-padded {
+    padding-left: 39px;
+}
+.commits-listing {
+    margin-bottom: 15px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.commit-group-title {
+    color: #767676;
+    margin-left: -31px;
+    margin-top: 15px;
+}
+
+.commit-group-title .octicon-git-commit {
+    background: #fff none repeat scroll 0 0;
+    color: #ccc;
+    margin-right: 17px;
+}
+svg:not(:root) {
+    overflow: hidden;
+}
+.octicon {
+    display: inline-block;
+    fill: currentcolor;
+    vertical-align: text-top;
+}
+
+.commit-group {
+    list-style-type: none;
+    margin-top: 10px;
+}
+.table-list {
+    border-bottom: 1px solid #e5e5e5;
+    color: #999;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+ul, ol {
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-left: 0;
+}
+
+.table-list-item {
+    display: table-row;
+    list-style: outside none none;
+    position: relative;
+}
+
+.table-list-bordered .table-list-cell:first-child {
+    border-left: 1px solid #eee;
+}
+.commit-avatar-cell.table-list-cell {
+    padding-right: 0;
+}
+.commit-avatar-cell {
+    width: 47px;
+}
+.table-list-cell {
+    border-top: 1px solid #eee;
+    display: table-cell;
+    font-size: 12px;
+    padding: 8px 10px;
+    position: relative;
+    vertical-align: top;
+}
+
+.avatar-parent-child {
+    position: relative;
+}
+
+a {
+    color: #4078c0;
+    text-decoration: none;
+}
+a {
+    background-color: transparent;
+}
+
+.table-list-cell {
+    border-top: 1px solid #eee;
+    display: table-cell;
+    font-size: 12px;
+    padding: 8px 10px;
+    position: relative;
+    vertical-align: top;
+}
+
+.commits-list-item .commit-title {
+    color: #333;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0;
+}
+.commit .commit-title, .commit .commit-title a {
+    color: #4e575b;
+}
+p {
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.commits-list-item .commit-meta {
+    color: #767676;
+    font-weight: normal;
+    margin-top: 1px;
+}
+.commit-author-section {
+    color: #333;
+}
+
+.commit-desc {
+    display: none;
+}
+
+.table-list-bordered .table-list-cell:last-child {
+    border-right: 1px solid #eee;
+}
+.commit-links-cell {
+    text-align: right;
+    width: 310px;
+}
+.table-list-cell {
+    border-top: 1px solid #eee;
+    display: table-cell;
+    font-size: 12px;
+    padding: 8px 10px;
+    position: relative;
+    vertical-align: top;
+}
+
+.btn-group::before {
+    content: "";
+    display: table;
+}
+.btn-group::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+.commit-links-group {
+    margin-right: 5px;
+}
+.btn-group {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.tooltipped-s::before, .tooltipped-se::before, .tooltipped-sw::before {
+    border-bottom-color: rgba(0, 0, 0, 0.8);
+    bottom: -5px;
+    margin-right: -5px;
+    right: 50%;
+    top: auto;
+}
+.tooltipped::before {
+    border: 5px solid transparent;
+    color: rgba(0, 0, 0, 0.8);
+    content: "";
+    display: none;
+    height: 0;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    width: 0;
+    z-index: 1000001;
+}
+.tooltipped-s::after, .tooltipped-n::after {
+    transform: translateX(50%);
+}
+.tooltipped-s::after, .tooltipped-se::after, .tooltipped-sw::after {
+    margin-top: 5px;
+    right: 50%;
+    top: 100%;
+}
+.tooltipped::after {
+    background: rgba(0, 0, 0, 0.8) none repeat scroll 0 0;
+    border-radius: 3px;
+    color: #fff;
+    content: attr(aria-label);
+    display: none;
+    font: 11px/1.5 Helvetica,arial,nimbussansl,liberationsans,freesans,clean,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    letter-spacing: normal;
+    opacity: 0;
+    padding: 5px 8px;
+    pointer-events: none;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: none;
+    text-transform: none;
+    white-space: pre;
+    word-wrap: break-word;
+    z-index: 1000000;
+}
+.btn-group .btn:first-child:not(:last-child) {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+.commits-list-item .btn-outline {
+    margin-top: 2px;
+}
+.btn-group .btn {
+    float: left;
+    position: relative;
+}
+.tooltipped {
+    position: relative;
+}
+.btn-outline {
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #e5e5e5;
+    color: #4078c0;
+}
+.btn {
+    -moz-user-select: none;
+    background-color: #eee;
+    background-image: linear-gradient(#fcfcfc, #eee);
+    border: 1px solid #d5d5d5;
+    border-radius: 3px;
+    color: #333;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 20px;
+    padding: 6px 12px;
+    position: relative;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+input, select, textarea, button {
+    font: 13px/1.4 Helvetica,arial,nimbussansl,liberationsans,freesans,clean,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+    cursor: pointer;
+}
+button, select {
+    text-transform: none;
+}
+button {
+    overflow: visible;
+}
+button, input, optgroup, select, textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+}
+
+.btn .octicon {
+    vertical-align: text-top;
+}
+svg:not(:root) {
+    overflow: hidden;
+}
+.octicon {
+    display: inline-block;
+    fill: currentcolor;
+    vertical-align: text-top;
+}
+.btn-outline {
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #e5e5e5;
+    color: #4078c0;
+}
